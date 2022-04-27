@@ -14,3 +14,7 @@ tuple = [1, 2, 3, 4]
 
 for i in tuple:
     print(i)
+    
+for i in tuple:
+    for j in list:
+        print(i*j)
