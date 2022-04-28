@@ -22,3 +22,22 @@ def multi(n1, n2=3):
 multi(3, 2)
 
 multi(2)
+
+
+def my_dict(**data):  # dict 변환 문법
+    print(data)
+    pass  # 함수 내부를 비워두고 싶을때 사용
+
+
+my_dict(id=1, username="ssar")  # dict라서 키값이 무조건 있어야함.
+
+n1 = 1
+
+
+def vartest():
+    global n1  # 전역변수에 있는것을 선택해줌, 사용 안하면 지역변수 n1을 생성함 => 타입을 지정안하기때문
+    n1 = 2
+
+
+vartest()
+print(n1)
