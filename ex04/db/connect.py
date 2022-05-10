@@ -1,3 +1,4 @@
+# python -m pip install pymysql
 from pymysql import connect, cursors  # cursor => rs.next처럼 딱 커서를 찝는것
 
 conn = connect(
